@@ -223,7 +223,6 @@ Proje, Redux Toolkit kullanarak çoklu dil desteği sunmaktadır.
 - 🇹🇷 Türkçe (tr)
 - 🇬🇧 İngilizce (en)
 
-
 ### Dil Değiştirme
 
 Kullanıcı navbar'daki dil seçici ile dili değiştirebilir. Seçim Redux store'da saklanır ve tüm bileşenlerde kullanılır.

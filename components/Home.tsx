@@ -58,7 +58,7 @@ const Home = () => {
         "Flutter",
         "Tailwind CSS",
         "TypeScript",
-        "Redux Toolkit"
+        "Redux Toolkit",
       ],
     },
     {
@@ -123,7 +123,16 @@ const Home = () => {
         </svg>
       ),
       color: "orange",
-      technologies: ["Git","ELK", "Postman", "TFS", "Jira", "Xunit","Jenkins", "Kubernates"]
+      technologies: [
+        "Git",
+        "ELK",
+        "Postman",
+        "TFS",
+        "Jira",
+        "Xunit",
+        "Jenkins",
+        "Kubernates",
+      ],
     },
   ];
 
@@ -166,7 +175,7 @@ const Home = () => {
                   <div className="w-full h-full rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 p-1">
                     <div className="w-full h-full rounded-lg overflow-hidden bg-gray-800">
                       <img
-                        src="https://via.placeholder.com/150"
+                        src="https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/portfolio-images/blog-images/WhatsApp%20Image%202026-01-04%20at%2021.59.27.jpeg"
                         alt="Furkan Akif İşlek"
                         className="w-full h-full object-cover"
                       />
@@ -203,22 +212,28 @@ const Home = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 mt-6">
-                <motion.button
+                <motion.a
+                  href="https://www.linkedin.com/in/furkanislek/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="flex-1 bg-cyan-500 hover:bg-cyan-600 text-black font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors"
                 >
                   <ExternalLink className="w-4 h-4" />
                   {t.home.linkedinButton}
-                </motion.button>
-                <motion.button
+                </motion.a>
+                <motion.a
+                  href="/Furkan_Akif_ISLEK.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="flex-1 bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors border border-gray-700"
                 >
                   <Download className="w-4 h-4" />
                   {t.home.cvButton}
-                </motion.button>
+                </motion.a>
               </div>
             </motion.div>
 
