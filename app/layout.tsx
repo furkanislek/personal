@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ReduxProvider } from "@/store/Provider";
+import { cookies, headers } from "next/headers";
+import translations from "@/locales/translations.json";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-display",
@@ -9,19 +11,45 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "Furkan Akif İşlek - Blog",
-  description:
-    "Yazılım geliştirme süreçlerinde edindiğim tecrübeler, karşılaştığım hatalar ve modern web teknolojileri üzerine notlar.",
-};
+async function getLanguage(): Promise<"tr" | "en"> {
+  const cookieStore = await cookies();
+  const languageCookie = cookieStore.get("language")?.value;
 
-export default function RootLayout({
+  if (languageCookie === "tr" || languageCookie === "en") {
+    return languageCookie;
+  }
+
+  const headersList = await headers();
+  const acceptLanguage = headersList.get("accept-language");
+
+  if (acceptLanguage) {
+    const primaryLanguage = acceptLanguage.split(",")[0].split("-")[0];
+    if (primaryLanguage === "tr") return "tr";
+    if (primaryLanguage === "en") return "en";
+  }
+
+  return "tr";
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const language = await getLanguage();
+  const t = translations[language].metadata;
+
+  return {
+    title: t.title,
+    description: t.description,
+  };
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const language = await getLanguage();
+
   return (
-    <html lang="tr" className="dark" suppressHydrationWarning>
+    <html lang={language} className="dark" suppressHydrationWarning>
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"

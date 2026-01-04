@@ -1,5 +1,9 @@
 {
   "tr": {
+    "metadata": {
+      "title": "Furkan Akif İşlek - Portfolio",
+      "description": "Yazılım geliştirme süreçlerinde edindiğim tecrübeler, karşılaştığım hatalar ve modern web teknolojileri üzerine notlar."
+    },
     "navbar": {
       "home": "/ANA SAYFA",
       "timeline": "/DENEYİM",
@@ -12,7 +16,14 @@
       "profileTitle": "Furkan Akif İşlek",
       "profileRole": "Full-Stack Developer",
       "profileBadge": "FULL-STACK",
-      "tags": ["REACT.JS", "NEXT.JS","C# / .NET", "FLUTTER", "TAILWIND CSS", "TYPESCRIPT"],
+      "tags": [
+        "REACT.JS",
+        "NEXT.JS",
+        "C# / .NET",
+        "FLUTTER",
+        "TAILWIND CSS",
+        "TYPESCRIPT"
+      ],
       "description": "Merhaba, ben Furkan. Finans sektöründe full stack developer olarak çalışıyorum. Eski kodları DDD ile yeniden tasarlayıp kodluyoruz, mikroservis mimarisine uygun çalışıyoruz. Kullandığım teknolojiler .netcore, nextjs, reactjs, mssql, kubernates, redux, elk, figma vb. Ayrıca Flutter ve React Native ile kendi mobil uygulamalarımı yazıyorum. Test aşamasında olan bazı uygulamalarım var. Çalışmaya azimli, takım çalışmasına uygun, hızlı düşünen ve hızlı başlayan bir karaktere sahibim.",
       "linkedinButton": "LİNKEDİN",
       "cvButton": "CV İNDİR",
@@ -185,6 +196,10 @@
     }
   },
   "en": {
+    "metadata": {
+      "title": "Furkan Akif İşlek - Portfolio",
+      "description": "Notes on my experiences in software development processes, errors I encountered, and modern web technologies."
+    },
     "navbar": {
       "home": "/HOME",
       "timeline": "/EXPERIENCE",
@@ -197,7 +212,14 @@
       "profileTitle": "Furkan Akif İşlek",
       "profileRole": "Full-Stack Developer",
       "profileBadge": "FULL-STACK",
-      "tags": ["REACT.JS", "NEXT.JS","C# / .NET", "FLUTTER", "TAILWIND CSS", "TYPESCRIPT"],
+      "tags": [
+        "REACT.JS",
+        "NEXT.JS",
+        "C# / .NET",
+        "FLUTTER",
+        "TAILWIND CSS",
+        "TYPESCRIPT"
+      ],
       "description": "Hello, I'm Furkan. I work as a full stack developer in the finance industry. We redesign and code old codes with DDD, we work in accordance with microservice architecture. The technologies I use are .netcore, nextjs, reactjs, mssql, kubernates, redux, elk, figma etc. I also write my own mobile applications with Flutter and React Native. I have some applications in the testing phase. I have a character that is determined to work, suitable for teamwork, thinks and starts quickly.",
       "linkedinButton": "LINKEDIN",
       "cvButton": "DOWNLOAD CV",
