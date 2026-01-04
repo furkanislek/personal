@@ -1,0 +1,372 @@
+{
+  "tr": {
+    "navbar": {
+      "home": "/ANA SAYFA",
+      "timeline": "/DENEYİM",
+      "projects": "/PROJELER",
+      "blog": "/BLOG",
+      "contact": "/İLETİŞİM"
+    },
+    "home": {
+      "header": "HAKKINDA",
+      "profileTitle": "Furkan Akif İşlek",
+      "profileRole": "Full-Stack Developer",
+      "profileBadge": "FULL-STACK",
+      "tags": ["REACT.JS", "NEXT.JS","C# / .NET", "FLUTTER", "TAILWIND CSS", "TYPESCRIPT"],
+      "description": "Merhaba, ben Furkan. Finans sektöründe full stack developer olarak çalışıyorum. Eski kodları DDD ile yeniden tasarlayıp kodluyoruz, mikroservis mimarisine uygun çalışıyoruz. Kullandığım teknolojiler .netcore, nextjs, reactjs, mssql, kubernates, redux, elk, figma vb. Ayrıca Flutter ve React Native ile kendi mobil uygulamalarımı yazıyorum. Test aşamasında olan bazı uygulamalarım var. Çalışmaya azimli, takım çalışmasına uygun, hızlı düşünen ve hızlı başlayan bir karaktere sahibim.",
+      "linkedinButton": "LİNKEDİN",
+      "cvButton": "CV İNDİR",
+      "sectionTitle": "",
+      "sectionDescription1": "Ekiple çalışma konusunda deneyimim var. Agile yaklaşıma aşinayım. Ekibimde öncelikle çözüm odaklı, yeni yaratıcı fikirler ile katkıda bulunmaya çalışıyorum. Özellikle önyüz tarafında ekibe yardımcı olmaya çalışıyorum.",
+      "sectionDescription2": "Yazılım geliştirme sürecinde sürekli öğrenmeye devam ediyorum. Bu süreçte çok değerli deneyimler kazandım ve hala devam ediyorum. Bulunduğum şirkette güncel teknolojileri kullanarak projeler geliştiriyorum.",
+      "terminalFolder": "📂 furkan-portfolio",
+      "terminalCommand": "npm run start:career",
+      "terminalOutput1": "furkan-portfolio@01.11.98 start:career",
+      "terminalOutput2": "node scripts/main.js",
+      "terminalSuccess": "✓ Profile looded successfully !",
+      "skills": {
+        "title": "SOFT SKILLS",
+        "items": [
+          {
+            "title": "Temiz Kod",
+            "description": "Sürdürülebilir, okunabilir ve ölçeklenebilir mimariler kurmak önceliğimdir. Mikroservis mimarisi deneyimim mevcuttur."
+          },
+          {
+            "title": "Kullanıcı Odaklılık",
+            "description": "Kullanıcı dostu arayüzleri ve arkaplan optimizasyonunu önemsiyorum."
+          },
+          {
+            "title": "Sürekli Gelişim",
+            "description": "Yeni teknolojileri, gündemi ve open-source kaynakları takip ederim."
+          }
+        ]
+      },
+      "techStack": {
+        "title": "TEKNOLOJİLER",
+        "categories": {
+          "frontend": "FRONTEND",
+          "backend": "BACKEND",
+          "database": "DATABASE",
+          "tools": "TOOLS"
+        }
+      }
+    },
+    "experience": {
+      "title": "DENEYİMLER",
+      "experiences": [
+        {
+          "id": 1,
+          "title": "Yazılım Geliştiricisi",
+          "company": "Intertech Bilgi İşlem ve Paz. A.Ş",
+          "period": "Mayıs 2023 - Devam Ediyor",
+          "details": [
+            "Intertech'te, bankalara yönelik yazılım hizmetleri alanında, CRM ekiplerinden Kampanya Yönetimi ekibinde yazılım geliştirici olarak çalıştım. Projenin karar alma mekanizması için JSON mantığıyla karar alma altyapısı ve ekranlar oluşturuyoruz.",
+            "Personel skorkart bilgilerini içeren projenin mikro servis dönüşümünde çalıştım. Çoklu koşullu ve tablo yapısını bir eşleme yöntemiyle tek bir tabloda toplayarak zaman kazandırdım. Backend tarafında Net Core, RabbitMQ, Kubernetes teknolojilerini; frontend tarafında ise Next.js, Ant Design (antd) ve Redux Toolkit teknolojilerini kullandım.",
+            "Bu süre zarfında Net Core, MSSQL, Next.js, ReactJS, Entity Framework ve Kubernetes gibi teknolojilerle çalıştım.",
+            "Backend tarafında, Net Core ve Entity Framework kullanarak SOLID prensiplerine uygun servisler yazdım.",
+            "Frontend tarafında, kullanıcı dostu ekranlar geliştirmek için Next.js'i Gateway ile bağladım.",
+            "Ayrıca, Jira ve Jenkins gibi yardımcı araçları kullandım.",
+            "React ve TypeScript ile Ant Design (antd) kütüphanesini kullandım.",
+            "Projelerin çoğunda Git versiyon kontrol sistemi kullanılırken, birkaç projede TFS kontrol sistemi tercih edildi."
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Full Stack Yazılım Stajyeri",
+          "company": "Workintech",
+          "period": "Ekim 2022 - Nisan 2023",
+          "details": [
+            "Workintech, sektörel şirketlerle ortak projeler üzerinde çalışan ve yazılım endüstrisinde kapsamlı eğitimler sağlayan bir kuruluştur.",
+            "ReactJS, NodeJS, Python, PostgreSQL ve ExpressJS kullanarak yaklaşık 85 projeyi başarıyla tamamladık.",
+            "Ayrıca, dört ay boyunca çeşitli projelerde diğer stajyerlere ve katılımcılara destek eğitmeni olarak yardımcı oldum."
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Freelancer",
+          "company": "-",
+          "period": "Örn: 2020-2024",
+          "details": [
+            "Upwork - Konteyner Kontrol Paneli, Gün İçi Raporlama Kontrol Paneli",
+            "R10 - Web Sitesi Hız Optimizasyonu, Web Sitesi SEO Uygulaması"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "badge": "ÇEVRİMİÇİ",
+      "title": "İLETİŞİM",
+      "subtitle": "Bir sonraki projeniz için hazır mısınız? Mesaj bırakın, kodu derleyelim.",
+      "description": "Fikirlerinizi gerçeğe dönüştürmek için sadece bir <strong>enter</strong> uzağınızdayım.",
+      "status": "AVAİLABLE",
+      "capacity": "Capacity",
+      "capacityValue": "85%",
+      "social": {
+        "title": "Bağlantılar",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "email": "Email"
+      },
+      "coreStack": {
+        "title": "CORE STACK",
+        "technologies": "React.js / Node.js / C# / Next.js"
+      },
+      "form": {
+        "terminalTitle": "user@portfolio:~/contact-form",
+        "name": "Ad Soyad",
+        "namePlaceholder": "Furkan Akif İşlek",
+        "email": "E-posta",
+        "emailPlaceholder": "furkanakifislek@gmail.com",
+        "subject": "Konu",
+        "subjectPlaceholder": "Proje teklifi: E-Ticaret Platformu",
+        "message": "Mesaj",
+        "messagePlaceholder": "Projemiz hakkında detayları buraya yazabilirsiniz...",
+        "submit": "[ GÖNDER ] ➤"
+      }
+    },
+    "projects": {
+      "headerTitle": "PROJELER",
+      "posts": [
+        {
+          "title": "Amina Dose - İlaç Takip",
+          "description": "AnimaDose, kusursuz ilaç takibi ve zamanında hatırlatıcılar için akıllı, kişisel sağlık arkadaşınızdır. Temiz bir tasarım ve dikkatli özelliklerle AnimaDose, günlük sağlık rutininizle uyum içinde kalmanıza yardımcı olur.",
+          "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/unnamed.webp",
+          "link": "https://play.google.com/store/apps/details?id=com.aminadose.mr",
+          "github": "https://github.com/furkanislek/med-reminder",
+          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "category": "Mobile"
+        },
+        {
+          "title": "Dijital Diş Sağlığı Destek Platformu",
+          "description": "DentaLab, Next.js ve Tailwind CSS kullanılarak geliştirilmiş, modern ve tamamen responsive bir diş sağlığı platformudur. Figma tasarımından birebir uyarlanan arayüzü ile tüm cihazlarda kusursuz ve kullanıcı dostu bir deneyim sunar.",
+          "image": "https://r.resimlink.com/EiopavjA.png",
+          "link": "https://dentalab-navy.vercel.app",
+          "github": "https://github.com/furkanislek/dentalab",
+          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "category": "Web"
+        },
+        {
+          "title": "PocketPath - Cüzdan Yönetimi",
+          "description": "Flutter ile yazılmıştır. Bu uygulamada paranızı takip edebilirsiniz. Kendinize zamanlanmış bir hedef belirleyerek, harcama ve gelir ekleyebilirsiniz. Ayrıca gelecek, eski ve aktif hedeflerinizi de görebilirsiniz.",
+          "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/pocketpath.jpg",
+          "link": "https://play.google.com/store/apps/details?id=com.pocket.pocketPath",
+          "github": "https://github.com/furkanislek/PocketPath",
+          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "category": "Mobile"
+        },
+        {
+          "title": "Ruh Sağlığı Destek Platformu",
+          "description": "MentalHeal, Next.js ve Tailwind CSS ile geliştirilmiş, modern ve mobil uyumlu bir ruh sağlığı destek platformudur. Figma'dan birebir uygulanmış tasarımı, temiz arayüzü ve kullanıcı dostu deneyimiyle öne çıkar.",
+          "image": "https://r.resimlink.com/YMn-iw9Pp.png",
+          "link": "https://mentalai-alpha.vercel.app",
+          "github": "https://github.com/furkanislek/mentalai",
+          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "category": "Web"
+        },
+        {
+          "title": "Admin Dashboard",
+          "description": "Admin Dashboard, Next.js, Tailwind CSS, Redux Toolkit, Framer Motion ve Recharts ile oluşturulmuş, akıcı animasyonlar, etkileşimli grafikler ve gerçek zamanlı veri görselleştirme özelliklerine sahip modern bir yönetim panelidir. ",
+          "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/admin-dashboard.png",
+          "link": "https://admin-dashboard-furkan.vercel.app",
+          "github": "https://github.com/furkanislek/admin-dashboard",
+          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "category": "Web"
+        },
+        {
+          "title": "TUDORA",
+          "description": "Flutter ile yazılmıştır. Takıldığınız yerde diğer öğrencilerden yardım alabilir, cevaplarınız doğru ise puan kazanabilirsiniz. Haftalık quizleri zamanında çözerek puan kazanabilirsiniz. Günlük planlar yapabilir ve tamamlanma durumlarını kontrol edebilirsiniz. Odaklanma modu ile sadece derse odaklanabilir ve süre dolduğunda puan kazanabilirsiniz. Ayrıca diğer öğrencileri takip edebilir, takip ettikleriniz ve tüm kullanıcılar arasındaki sıralamanızı görebilirsiniz. ",
+          "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/tudora.png",
+          "link": "https://github.com/furkanislek/students-control-app",
+          "github": "https://github.com/furkanislek/students-control-app",
+          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "category": "Mobile"
+        }
+      ]
+    }
+  },
+  "en": {
+    "navbar": {
+      "home": "/HOME",
+      "timeline": "/EXPERIENCE",
+      "projects": "/PROJECTS",
+      "blog": "/BLOG",
+      "contact": "/CONTACT"
+    },
+    "home": {
+      "header": "ABOUT",
+      "profileTitle": "Furkan Akif İşlek",
+      "profileRole": "Full-Stack Developer",
+      "profileBadge": "FULL-STACK",
+      "tags": ["REACT.JS", "NEXT.JS","C# / .NET", "FLUTTER", "TAILWIND CSS", "TYPESCRIPT"],
+      "description": "Hello, I'm Furkan. I work as a full stack developer in the finance industry. We redesign and code old codes with DDD, we work in accordance with microservice architecture. The technologies I use are .netcore, nextjs, reactjs, mssql, kubernates, redux, elk, figma etc. I also write my own mobile applications with Flutter and React Native. I have some applications in the testing phase. I have a character that is determined to work, suitable for teamwork, thinks and starts quickly.",
+      "linkedinButton": "LINKEDIN",
+      "cvButton": "DOWNLOAD CV",
+      "sectionTitle": "My Computer, My Keys and Me",
+      "sectionDescription1": "I have experience working with teams. I am familiar with the Agile approach. In my team, I primarily strive to contribute with solution-oriented, new creative ideas. I particularly try to assist the team on the front-end side.",
+      "sectionDescription2": "I continue to learn constantly during the software development process. I have gained valuable experience during this process and am still learning. I develop projects using the latest technologies at my company.",
+      "terminalFolder": "📂 furkan-portfolio",
+      "terminalCommand": "npm run start:career",
+      "terminalOutput1": "furkan-portfolio@01.11.98 start:career",
+      "terminalOutput2": "node scripts/main.js",
+      "terminalSuccess": "✓ Profile loaded successfully!",
+      "skills": {
+        "title": "SOFT SKILLS",
+        "items": [
+          {
+            "title": "Clean Code",
+            "description": "Building sustainable, readable, and scalable architectures is my priority. I have experience with microservice architecture."
+          },
+          {
+            "title": "User Experience",
+            "description": "I always aim for user-friendly interfaces and making the most of background optimisation."
+          },
+          {
+            "title": "Continuous Improvement",
+            "description": "I follow new technologies, current events, and open-source resources."
+          }
+        ]
+      },
+      "techStack": {
+        "title": "TECHNOLOGIES",
+        "categories": {
+          "frontend": "FRONTEND",
+          "backend": "BACKEND",
+          "database": "DATABASE",
+          "tools": "TOOLS"
+        }
+      }
+    },
+    "experience": {
+      "title": "EXPERIENCES",
+      "experiences": [
+        {
+          "id": 1,
+          "title": "Software Developer",
+          "company": "Intertech Bilgi İşlem ve Paz. A.Ş",
+          "period": "May 2023 - Present",
+          "details": [
+            "I have experience working at Intertech in the field of software services for banks as a software developer in the Campaign Management team from CRM teams. We are creating decision-making infrastructure and screens with JSON logic for the decision mechanism in our Project.",
+            "I worked on the microservice transformation of the project containing personnel scorecard information. I saved time by using a multiple conditional and table structure with a mapping method by mapping in a single table. I used backend netcore, rabbitmq, kubernetes technologies; on the frontend side I used next.js, antd and redux toolkit technologies for the frontend.",
+            "During this time, I worked with technologies such as Net Core, MSSQL, Next.js, ReactJS, Entity Framework, and Kubernetes.",
+            "On the backend side, I wrote SOLID compatible services using Net Core and Entity Framework.",
+            "On the frontend side, connect to Next.JS with Gateway to develop user-friendly screens.",
+            "Additionally, use auxiliary tools like Jira and Jenkins.",
+            "Using the Ant Design (antd) library for React with TypeScript.",
+            "Most of the projects used the Git version control system, while a few opted for the TFS control system."
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Full Stack Software Intern",
+          "company": "Workintech",
+          "period": "Oct 2022 - Apr 2023",
+          "details": [
+            "At Workintech, we collaborate with sectoral companies on joint projects and provide comprehensive training in the software industry.",
+            "We have successfully completed approximately 85 projects using ReactJS, NodeJS, Python, PostgreSQL, and ExpressJS.",
+            "Additionally, I served as a support instructor for other trainees and interns on various projects for four months."
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Freelancer",
+          "company": "-",
+          "period": "Örn: 2020-2024",
+          "details": [
+            "Upwork - Container Dashboard, Intraday Reporting Dashboard",
+            "R10 - Web Site Speed Optimization, Web Site SEO Application"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "badge": "ONLINE",
+      "title": "CONTACT",
+      "subtitle": "Ready for your next project? Leave a message, let's compile the code.",
+      "description": "Just one <strong>enter</strong> away to turn your ideas into reality.",
+      "status": "AVAİLABLE",
+      "capacity": "Capacity",
+      "capacityValue": "85%",
+      "social": {
+        "title": "Links",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "email": "Email"
+      },
+      "coreStack": {
+        "title": "CORE STACK",
+        "technologies": "React.js / Node.js / C# / Next.js"
+      },
+      "form": {
+        "terminalTitle": "user@portfolio:~/contact-form",
+        "name": "Full Name",
+        "namePlaceholder": "Furkan Akif İşlek",
+        "email": "E-mail",
+        "emailPlaceholder": "furkanakifislek@gmail.com",
+        "subject": "Subject",
+        "subjectPlaceholder": "Project proposal: E-Commerce Platform",
+        "message": "Message",
+        "messagePlaceholder": "You can write details about your project here...",
+        "submit": "[ SEND ] ➤"
+      }
+    },
+    "projects": {
+      "headerTitle": "PROJECTS",
+      "posts": [
+        {
+          "title": "Amina Dose - Med Reminder",
+          "description": "AnimaDose is your smart, personal health companion for flawless medication tracking and timely reminders. With a clean design and thoughtful features, AnimaDose helps you stay in sync with your daily health routine.",
+          "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/unnamed.webp",
+          "link": "https://play.google.com/store/apps/details?id=com.aminadose.mr",
+          "github": "https://github.com/furkanislek/med-reminder",
+          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "category": "Mobile"
+        },
+        {
+          "title": "Digital Dental Health Support Platform",
+          "description": "DentaLab is a modern and fully responsive dental health platform developed using Next.js and Tailwind CSS. With its interface directly adapted from Figma design, it offers a flawless and user-friendly experience on all devices.",
+          "image": "https://r.resimlink.com/EiopavjA.png",
+          "link": "https://dentalab-navy.vercel.app",
+          "github": "https://github.com/furkanislek/dentalab",
+          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "category": "Web"
+        },
+        {
+          "title": "PocketPath - Wallet Management",
+          "description": "Written in Flutter. You can track your money with this app. You can add expenses and income by setting a scheduled goal for yourself. You can also see your upcoming, old and active goals.",
+          "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/pocketpath.jpg",
+          "link": "https://play.google.com/store/apps/details?id=com.pocket.pocketPath",
+          "github": "https://github.com/furkanislek/PocketPath",
+          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "category": "Mobile"
+        },
+        {
+          "title": "Mental Health Support Platform",
+          "description": "MentalHeal is a modern and mobile-friendly mental health support platform developed with Next.js and Tailwind CSS. It stands out with its design directly applied from Figma, clean interface and user-friendly experience.",
+          "image": "https://r.resimlink.com/YMn-iw9Pp.png",
+          "link": "https://mentalai-alpha.vercel.app",
+          "github": "https://github.com/furkanislek/mentalai",
+          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "category": "Web"
+        },
+        {
+          "title": "Admin Dashboard",
+          "description": "Admin Dashboard is a modern management panel built with Next.js, Tailwind CSS, Redux Toolkit, Framer Motion and Recharts, featuring smooth animations, interactive charts and real-time data visualization.",
+          "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/admin-dashboard.png",
+          "link": "https://admin-dashboard-furkan.vercel.app",
+          "github": "https://github.com/furkanislek/admin-dashboard",
+          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "category": "Web"
+        },
+        {
+          "title": "TUDORA",
+          "description": "Written in Flutter. You can get help from other students when you're stuck, and earn points if your answers are correct. You can earn points by solving weekly quizzes on time. You can make daily plans and check their completion status. With focus mode, you can focus only on the lesson and earn points when the time is up. You can also follow other students and see your ranking among those you follow and all users.",
+          "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/tudora.png",
+          "link": "https://github.com/furkanislek/students-control-app",
+          "github": "https://github.com/furkanislek/students-control-app",
+          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "category": "Mobile"
+        }
+      ]
+    }
+  }
+}
