@@ -223,33 +223,6 @@ Proje, Redux Toolkit kullanarak çoklu dil desteği sunmaktadır.
 - 🇹🇷 Türkçe (tr)
 - 🇬🇧 İngilizce (en)
 
-### Çeviri Dosyaları
-
-#### 1. Genel Çeviriler (`locales/translations.json`)
-
-```json
-{
-  "tr": {
-    "navbar": { ... },
-    "home": { ... },
-    "experience": { ... },
-    "projects": { ... },
-    "contact": { ... }
-  },
-  "en": { ... }
-}
-```
-
-#### 2. Blog Çevirileri (`locales/blog-translations.json`)
-
-```json
-{
-  "tr": {
-    "blogs": [ ... ]
-  },
-  "en": { ... }
-}
-```
 
 ### Dil Değiştirme
 
