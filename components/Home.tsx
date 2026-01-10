@@ -143,7 +143,6 @@ const Home = () => {
     >
       <div className="w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-          {/* Left Side - Profile Card */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -151,7 +150,6 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="space-y-6"
           >
-            {/* HAKKINDA Header */}
             <motion.h2
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -161,7 +159,6 @@ const Home = () => {
             >
               {t.home.header} {">"}_
             </motion.h2>
-            {/* Profile Card */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -170,7 +167,6 @@ const Home = () => {
               className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg p-6 md:p-8 hover:shadow-2xl hover:transition-shadow duration-300 "
             >
               <div className="flex flex-col sm:flex-row gap-6">
-                {/* Profile Image */}
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0 mx-auto sm:mx-0">
                   <div className="w-full h-full rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 p-1">
                     <div className="w-full h-full rounded-lg overflow-hidden bg-gray-800">
@@ -186,7 +182,6 @@ const Home = () => {
                   </div>
                 </div>
 
-                {/* Profile Info */}
                 <div className="flex-1 text-center sm:text-left">
                   <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
                     {t.home.profileTitle}
@@ -237,7 +232,6 @@ const Home = () => {
               </div>
             </motion.div>
 
-            {/* Description Text */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -263,7 +257,6 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="bg-gradient-to-br from-teal-950/40 to-cyan-950/40 backdrop-blur-sm border border-teal-700/50 rounded-xl overflow-hidden"
             >
-              {/* Header with dots */}
               <div className=" border-b border-teal-700/50 px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
@@ -274,7 +267,6 @@ const Home = () => {
                 <div></div>
               </div>
 
-              {/* Content */}
               <div className="p-6 space-y-8 flex flex-col gap-0">
                 <div>
                   <span className="text-cyan-400 mr-2">{"➜"}</span>
@@ -300,7 +292,6 @@ const Home = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Side - Skills & Tools */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -308,9 +299,7 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6 mt-4 md:mt-6 xl:mt-8"
           >
-            {/* Skills Cards - DEĞERLER */}
             <div className="bg-gradient-to-br from-teal-950/40 to-cyan-950/40 backdrop-blur-sm border border-teal-700/50 rounded-xl overflow-hidden">
-              {/* Header with dots */}
               <div className=" border-b border-teal-700/50 px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="bg-cyan-400/20 p-2 rounded-lg">
@@ -327,7 +316,6 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* Content */}
               <div className="p-6 space-y-8">
                 {skills.map((skill, index) => (
                   <motion.div
@@ -354,9 +342,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Tool Box */}
             <div className="bg-gradient-to-br from-teal-950/40 to-cyan-950/40 backdrop-blur-sm border border-teal-700/50 rounded-xl overflow-hidden">
-              {/* Header with dots */}
               <div className=" border-b border-teal-700/50 px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="bg-cyan-400/20 p-2 rounded-lg">
@@ -374,7 +360,6 @@ const Home = () => {
               </div>
               <div className="p-6 space-y-8">
                 {techStack.map((tool, index) => {
-                  // Renk eşleştirmesi
                   const colorClasses = {
                     cyan: "bg-cyan-500/20 border-cyan-500/30 hover:bg-cyan-500/30",
                     purple:

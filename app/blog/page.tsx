@@ -8,7 +8,6 @@ const BlogList = () => {
   const language = useAppSelector((state) => state.language.language);
   const blogData = useAppSelector((state) => state.language.blogTranslations);
 
-  // Blog posts from translations - sorted by newest first
   const blogPosts = blogData.blogs
     .map((blog) => ({
       ...blog,
@@ -103,7 +102,6 @@ const BlogList = () => {
      
         </motion.div>
 
-        {/* Blog Posts Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -117,7 +115,6 @@ const BlogList = () => {
                   whileHover={{ y: -5 }}
                   className="relative bg-gray-900/80 border-2 border-cyan-500/40 rounded-lg overflow-hidden backdrop-blur-sm group cursor-pointer h-full"
                 >
-                  {/* Scanline effect */}
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/5 to-transparent pointer-events-none"
                     animate={{
@@ -130,7 +127,6 @@ const BlogList = () => {
                     }}
                   />
 
-                  {/* Image */}
                   <div className="relative h-48 overflow-hidden border-b-2 border-cyan-500/40">
                     <img
                       src={post.imglink}
@@ -140,9 +136,7 @@ const BlogList = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60" />
                   </div>
 
-                  {/* Content */}
                   <div className="p-6 relative">
-                    {/* Date and Read Time */}
                     <div className="flex items-center gap-4 mb-3 text-xs font-mono text-cyan-400/80">
                       <div className="flex items-center gap-1">
                         <Calendar size={14} />
@@ -154,17 +148,14 @@ const BlogList = () => {
                       </div>
                     </div>
 
-                    {/* Title */}
                     <h2 className="text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-cyan-400 transition-colors">
                       {post.title}
                     </h2>
 
-                    {/* Summary */}
                     <p className="text-gray-400 text-sm mb-4 line-clamp-3">
                       {post.summary}
                     </p>
 
-                    {/* Tags */}
                     <div className="flex flex-wrap gap-2">
                       {post.tags.map((tag, index) => (
                         <span
@@ -177,7 +168,6 @@ const BlogList = () => {
                       ))}
                     </div>
 
-                    {/* Read More Arrow */}
                     <div className="mt-4 flex items-center gap-2 text-cyan-400 font-mono text-sm">
                       <span>
                         {language === "tr" ? "Devamını Oku" : "Read More"}
@@ -195,7 +185,6 @@ const BlogList = () => {
                     </div>
                   </div>
 
-                  {/* Corner Decoration */}
                   <div className="absolute top-0 right-0 w-16 h-16">
                     <div className="absolute top-0 right-0 w-0 h-0 border-t-[3rem] border-r-[3rem] border-t-cyan-500/20 border-r-transparent" />
                   </div>
@@ -205,7 +194,6 @@ const BlogList = () => {
           ))}
         </motion.div>
 
-        {/* Footer Info */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

@@ -72,7 +72,6 @@ const Navbar = () => {
           </motion.div>
         </Link>
 
-        {/* Desktop Menu */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -96,7 +95,6 @@ const Navbar = () => {
             </Link>
           ))}
 
-          {/* Desktop Retro Language Switch */}
           <motion.button
             onClick={handleToggleLanguage}
             initial={{ opacity: 0 }}
@@ -106,7 +104,6 @@ const Navbar = () => {
             whileTap={{ scale: 1 }}
             className="relative bg-gray-900/80 border-2 border-cyan-500/40 rounded px-4 py-2 backdrop-blur-sm overflow-hidden group cursor-pointer text-sm"
           >
-            {/* Scanline effect */}
             <motion.div
               className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/10 to-transparent"
               animate={{
@@ -119,12 +116,9 @@ const Navbar = () => {
               }}
             />
 
-            {/* Content */}
             <div className="relative flex items-center gap-2">
-              {/* Terminal bracket */}
               <span className="text-cyan-400 font-mono text-sm">{">"}</span>
 
-              {/* Language display with flip animation */}
               <motion.div
                 key={language}
                 initial={{ rotateX: 90, opacity: 0 }}
@@ -140,7 +134,6 @@ const Navbar = () => {
                 </span>
               </motion.div>
 
-              {/* Blinking cursor */}
               <motion.span
                 animate={{ opacity: [1, 0, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
@@ -150,12 +143,10 @@ const Navbar = () => {
               </motion.span>
             </div>
 
-            {/* Glow effect on hover */}
             <motion.div className="absolute inset-0 bg-cyan-500/0 group-hover:bg-cyan-500/5 transition-colors duration-300 pointer-events-none" />
           </motion.button>
         </motion.div>
 
-        {/* Mobile Hamburger Button */}
         <motion.button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden relative bg-gray-900/80 border-2 border-cyan-500/40 rounded p-2 backdrop-blur-sm overflow-hidden group cursor-pointer"
@@ -187,7 +178,6 @@ const Navbar = () => {
         </motion.button>
       </motion.nav>
 
-      {/* Mobile Retro Menu */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
@@ -197,7 +187,6 @@ const Navbar = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="fixed top-0 right-0 h-screen w-full sm:w-80 bg-gray-900/95 backdrop-blur-xl border-l-2 border-cyan-500/40 z-40 md:hidden"
           >
-            {/* Retro Grid Background */}
             <div className="absolute inset-0 opacity-10">
               <div
                 className="h-full w-full"
@@ -209,7 +198,6 @@ const Navbar = () => {
               />
             </div>
 
-            {/* Scanline Effect */}
             <motion.div
               className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/5 to-transparent pointer-events-none"
               animate={{
@@ -223,7 +211,6 @@ const Navbar = () => {
             />
 
             <div className="relative h-full flex flex-col pt-24 px-8">
-              {/* Menu Header */}
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -242,7 +229,6 @@ const Navbar = () => {
                 </div>
               </motion.div>
 
-              {/* Menu Items */}
               <div className="flex flex-col gap-4 mb-8">
                 {menuItems.map((item, index) => (
                   <Link key={index} href={item.href}>
@@ -275,7 +261,6 @@ const Navbar = () => {
                 ))}
               </div>
 
-              {/* Mobile Language Switch */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -291,7 +276,6 @@ const Navbar = () => {
                   whileTap={{ scale: 0.98 }}
                   className="w-full relative bg-gray-900/80 border-2 border-cyan-500/40 rounded px-4 py-3 backdrop-blur-sm overflow-hidden group cursor-pointer"
                 >
-                  {/* Scanline effect */}
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/10 to-transparent"
                     animate={{
@@ -304,7 +288,6 @@ const Navbar = () => {
                     }}
                   />
 
-                  {/* Content */}
                   <div className="relative flex items-center justify-center gap-2">
                     <span className="text-cyan-400 font-mono text-sm">
                       {">"}
@@ -332,12 +315,10 @@ const Navbar = () => {
                     </motion.span>
                   </div>
 
-                  {/* Glow effect */}
                   <motion.div className="absolute inset-0 bg-cyan-500/0 group-hover:bg-cyan-500/10 transition-colors duration-300 pointer-events-none" />
                 </motion.button>
               </motion.div>
 
-              {/* Footer */}
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

@@ -60,7 +60,6 @@ export default async function RootLayout({
         className={`${spaceGrotesk.variable} bg-background-light dark:bg-background-dark text-slate-200 dark:text-slate-300 antialiased overflow-x-hidden relative min-h-screen flex flex-col font-display`}
         suppressHydrationWarning
       >
-        {/* Background Grid Effect */}
         <div
           className="fixed inset-0 z-0 opacity-5 pointer-events-none"
           style={{

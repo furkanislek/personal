@@ -12,7 +12,6 @@ const Timeline = () => {
       className="min-h-screen flex  justify-center py-6 md:py-6 2xl:py-8"
     >
       <div className="w-full">
-        {/* Header */}
         <motion.h2
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -23,7 +22,6 @@ const Timeline = () => {
           {t.experience.title} {">"}_
         </motion.h2>
 
-        {/* Experience Cards */}
         <div className="space-y-6">
           {t.experience.experiences.map((exp, index) => (
             <motion.div
@@ -34,7 +32,6 @@ const Timeline = () => {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               className="bg-gradient-to-br from-teal-950/40 to-cyan-950/40 backdrop-blur-sm border border-teal-700/50 rounded-xl overflow-hidden hover:shadow-2xl hover:transition-shadow duration-300"
             >
-              {/* Header with dots */}
               <div className="border-b border-teal-700/50 px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="bg-cyan-400/20 p-2 rounded-lg">
@@ -62,13 +59,11 @@ const Timeline = () => {
                 </div>
               </div>
 
-              {/* Mobile Period */}
               <div className="sm:hidden border-b border-teal-700/50 px-6 py-3 flex items-center gap-2 text-gray-400 text-sm">
                 <Calendar className="w-4 h-4" />
                 <span>{exp.period}</span>
               </div>
 
-              {/* Content */}
               <div className="p-6">
                 <div className="space-y-4">
                   {exp.details.map((detail, detailIndex) => (
@@ -94,7 +89,6 @@ const Timeline = () => {
                 </div>
               </div>
 
-              {/* Terminal-style footer */}
               <div className="border-t border-teal-700/50 px-6 py-3 bg-gray-900/30">
                 <div className="flex items-center gap-2 text-xs text-gray-500">
                   <span className="text-cyan-400">●</span>
@@ -108,8 +102,7 @@ const Timeline = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Bottom Terminal Effect */}
+          
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

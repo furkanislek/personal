@@ -25,8 +25,6 @@ const Contacts = () => {
     setStatusMessage({ type: "", text: "" });
 
     try {
-      // EmailJS configuration
-      // Replace these with your actual EmailJS credentials
       const serviceId =
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
       const templateId =
@@ -50,7 +48,6 @@ const Contacts = () => {
         text: "✓ Mesajınız başarıyla gönderildi!",
       });
 
-      // Clear form
       setFormData({
         name: "",
         email: "",
@@ -83,7 +80,6 @@ const Contacts = () => {
       className="min-h-screen flex justify-center py-6 md:py-6 2xl:py-16"
     >
       <div className="w-full">
-        {/* Badge and Title */}
         <div className="">
           <motion.h2
             initial={{ opacity: 0, x: -30 }}
@@ -131,7 +127,6 @@ const Contacts = () => {
             transition={{ duration: 0.8 }}
             className="bg-gradient-to-br from-teal-950/40 to-cyan-950/40 backdrop-blur-sm border border-teal-700/50 rounded-xl overflow-hidden"
           >
-            {/* Terminal Header */}
             <div className="border-b border-teal-700/50 px-6 py-4 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-red-500 rounded-full"></div>
@@ -144,11 +139,8 @@ const Contacts = () => {
               <div></div>
             </div>
 
-            {/* Form Content */}
             <form onSubmit={handleSubmit} className="p-6 space-y-6">
-              {/* Name and Email Row */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {/* Name Field */}
                 <div>
                   <label className="flex items-center gap-2 text-gray-400 text-sm mb-2">
                     <User className="w-4 h-4" />
@@ -164,7 +156,6 @@ const Contacts = () => {
                   />
                 </div>
 
-                {/* Email Field */}
                 <div>
                   <label className="flex items-center gap-2 text-gray-400 text-sm mb-2">
                     <Mail className="w-4 h-4" />
@@ -181,7 +172,6 @@ const Contacts = () => {
                 </div>
               </div>
 
-              {/* Subject Field */}
               <div>
                 <label className="flex items-center gap-2 text-gray-400 text-sm mb-2">
                   <MessageSquare className="w-4 h-4" />
@@ -197,7 +187,6 @@ const Contacts = () => {
                 />
               </div>
 
-              {/* Message Field */}
               <div>
                 <label className="flex items-center gap-2 text-gray-400 text-sm mb-2">
                   <MessageSquare className="w-4 h-4" />
@@ -213,7 +202,6 @@ const Contacts = () => {
                 />
               </div>
 
-              {/* Status Message */}
               {statusMessage.text && (
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
@@ -228,7 +216,6 @@ const Contacts = () => {
                 </motion.div>
               )}
 
-              {/* Submit Button */}
               <motion.button
                 type="submit"
                 disabled={isLoading}

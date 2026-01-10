@@ -9,9 +9,10 @@ import {
   Tag,
   Share2,
   Code2,
+  X,
 } from "lucide-react";
 import { useParams } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const BlogDetail = () => {
   const params = useParams();
@@ -19,31 +20,26 @@ const BlogDetail = () => {
   const language = useAppSelector((state) => state.language.language);
   const blogData = useAppSelector((state) => state.language.blogTranslations);
   const contentRef = useRef<HTMLDivElement>(null);
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
-  // Find blog post by slug
   const blogPost = blogData.blogs.find((blog) => blog.slug === slug);
 
-  // If blog not found, use first blog as fallback
   const post = blogPost || blogData.blogs[0];
 
-  // Parse tags
   const tags = post.tags.split(", ");
 
   useEffect(() => {
     if (contentRef.current) {
-      // Remove unwanted elements
       const unwantedElements =
         contentRef.current.querySelectorAll("script, style");
       unwantedElements.forEach((el) => el.remove());
 
-      // Add target="_blank" to all links
       const links = contentRef.current.querySelectorAll("a");
       links.forEach((link) => {
         link.setAttribute("target", "_blank");
         link.setAttribute("rel", "noopener noreferrer");
       });
 
-      // Add retro icon to h2 headings
       const h2s = contentRef.current.querySelectorAll("h2");
       h2s.forEach((h2) => {
         if (!h2.querySelector("span.retro-icon")) {
@@ -54,7 +50,6 @@ const BlogDetail = () => {
         }
       });
 
-      // Add custom bullet points to ul items
       const lis = contentRef.current.querySelectorAll("ul > li");
       lis.forEach((li) => {
         if (!li.querySelector(".custom-bullet")) {
@@ -66,12 +61,18 @@ const BlogDetail = () => {
         }
       });
 
-      // Add retro borders to images that don't have them
       const images = contentRef.current.querySelectorAll("img");
       images.forEach((img) => {
-        img.classList.add("retro-image");
-        // Add loading attribute for performance
+        img.classList.add(
+          "retro-image",
+          "cursor-pointer",
+          "hover:opacity-80",
+          "transition-opacity"
+        );
         img.setAttribute("loading", "lazy");
+        img.addEventListener("click", () => {
+          setLightboxImage(img.src);
+        });
       });
     }
   }, [post.html]);
@@ -88,7 +89,6 @@ const BlogDetail = () => {
 
   return (
     <div className="min-h-screen bg-gray-950 relative overflow-hidden">
-      {/* Retro Grid Background */}
       <div className="fixed inset-0 opacity-10">
         <div
           className="h-full w-full"
@@ -100,7 +100,6 @@ const BlogDetail = () => {
         />
       </div>
 
-      {/* Scanline Effect */}
       <motion.div
         className="fixed inset-0 bg-gradient-to-b from-transparent via-cyan-500/5 to-transparent pointer-events-none z-10"
         animate={{
@@ -114,7 +113,6 @@ const BlogDetail = () => {
       />
 
       <div className="relative z-20 px-4 md:px-8 xl:px-[15%] 2xl:px-[20%] py-24">
-        {/* Back Button */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -131,7 +129,6 @@ const BlogDetail = () => {
             </span>
           </Link>
 
-          {/* Share Button */}
           <motion.button
             onClick={handleShare}
             whileHover={{ scale: 1.05 }}
@@ -143,14 +140,12 @@ const BlogDetail = () => {
           </motion.button>
         </motion.div>
 
-        {/* Article Container */}
         <motion.article
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="relative bg-gray-900/60 border-2 border-cyan-500/40 rounded-lg overflow-hidden backdrop-blur-sm"
         >
-          {/* Scanline effect */}
           <motion.div
             className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/5 to-transparent pointer-events-none z-10"
             animate={{
@@ -163,7 +158,6 @@ const BlogDetail = () => {
             }}
           />
 
-          {/* Hero Image */}
           <div className="relative h-64 md:h-96 overflow-hidden border-b-2 border-cyan-500/40">
             <img
               src={post.imglink}
@@ -172,7 +166,6 @@ const BlogDetail = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent" />
 
-            {/* Title Overlay */}
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
               <div className="flex items-center gap-2 mb-3">
                 <Terminal className="text-cyan-400" size={24} />
@@ -186,7 +179,6 @@ const BlogDetail = () => {
             </div>
           </div>
 
-          {/* Meta Information */}
           <div className="border-b-2 border-cyan-500/40 bg-gray-900/80 p-4 md:p-6">
             <div className="flex flex-wrap items-center gap-4 md:gap-6 text-sm font-mono">
               <div className="flex items-center gap-2 text-cyan-400">
@@ -202,7 +194,6 @@ const BlogDetail = () => {
               </div>
             </div>
 
-            {/* Tags */}
             <div className="flex flex-wrap gap-2 mt-4">
               {tags.map((tag, index) => (
                 <span
@@ -216,9 +207,7 @@ const BlogDetail = () => {
             </div>
           </div>
 
-          {/* Content */}
           <div className="p-6 md:p-8 lg:p-12 relative">
-            {/* Summary Box */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -239,7 +228,6 @@ const BlogDetail = () => {
               </div>
             </motion.div>
 
-            {/* HTML Content */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -250,7 +238,6 @@ const BlogDetail = () => {
             />
           </div>
 
-          {/* Corner Decorations */}
           <div className="absolute top-0 right-0 w-20 h-20">
             <div className="absolute top-0 right-0 w-0 h-0 border-t-[4rem] border-r-[4rem] border-t-cyan-500/20 border-r-transparent" />
           </div>
@@ -259,7 +246,6 @@ const BlogDetail = () => {
           </div>
         </motion.article>
 
-        {/* Navigation Footer */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -291,6 +277,35 @@ const BlogDetail = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Lightbox Modal */}
+      {lightboxImage && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => setLightboxImage(null)}
+          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
+        >
+          <motion.button
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            onClick={() => setLightboxImage(null)}
+            className="absolute top-4 right-4 p-2 bg-gray-900/80 border-2 border-cyan-500/40 rounded text-cyan-400 hover:bg-cyan-500/10 transition-colors z-10"
+          >
+            <X size={24} />
+          </motion.button>
+          <motion.img
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ type: "spring", duration: 0.5 }}
+            src={lightboxImage}
+            alt="Full size"
+            className="max-w-full max-h-full object-contain rounded-lg border-2 border-cyan-500/40"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </motion.div>
+      )}
     </div>
   );
 };

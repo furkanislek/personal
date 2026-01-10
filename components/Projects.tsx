@@ -54,7 +54,6 @@ const Projects = () => {
 
   return (
     <section id="projects" className="">
-      {/* Header */}
       <motion.h2
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -79,7 +78,6 @@ const Projects = () => {
               layout
               className="group relative bg-surface border border-surface-highlight rounded-lg overflow-hidden hover:border-primary transition-all duration-300 flex flex-col justify-between"
             >
-              {/* Category Badge */}
               <div className="absolute top-4 right-4 z-10">
                 <span
                   className={`px-3 py-1 text-xs font-bold uppercase tracking-wider rounded ${
@@ -94,7 +92,6 @@ const Projects = () => {
                 </span>
               </div>
 
-              {/* Project Image */}
               <div className="relative h-72 overflow-hidden bg-background-dark">
                 {imageErrors[index] ? (
                   <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-surface via-background-dark to-surface-highlight">
@@ -132,7 +129,6 @@ const Projects = () => {
                 )}
               </div>
 
-              {/* Content */}
               <div className="p-6 flex flex-col justify-evenly h-full">
                 <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300">
                   {project.title}
@@ -142,7 +138,6 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
                     <span
@@ -154,7 +149,6 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Buttons */}
                 <div className="flex gap-3">
                   <Link
                     href={project.link}
