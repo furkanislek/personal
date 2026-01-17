@@ -38,6 +38,22 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t.title,
     description: t.description,
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: '32x32' },
+        { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+      ],
+      shortcut: '/favicon.ico',
+      apple: [
+        { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+      ],
+      other: [
+        {
+          rel: 'apple-touch-icon-precomposed',
+          url: '/icon.png',
+        },
+      ],
+    },
   };
 }
 
