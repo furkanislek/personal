@@ -1,19 +1,32 @@
 @import "tailwindcss";
 
+/*
+ * Tailwind v4 varsayılan olarak `dark:` varyantını OS'in prefers-color-scheme
+ * ayarına bağlar; <html class="dark"> tek başına hiçbir şey yapmaz.
+ * Bu site koyu tema üzerine tasarlandığı için `dark:` varyantını `.dark`
+ * sınıfına bağlıyoruz ve renk değişkenlerini her zaman koyu tutuyoruz.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
 html {
   scroll-behavior: smooth;
+  /* Sabit navbar'ın altında kalmasın diye çapa hedeflerine üstten boşluk */
+  scroll-padding-top: 6rem;
+  color-scheme: dark;
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #050a10;
+  --foreground: #ededed;
 }
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-display);
-  --font-mono: "monospace";
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   
   /* Custom Colors */
   --color-primary: #2ee2e5;
@@ -30,17 +43,10 @@ html {
   --radius-full: 9999px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #050a10;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-display), sans-serif;
+  font-family: var(--font-display);
 }
 
 /* Custom scrollbar for webkit */

@@ -7,6 +7,7 @@ import emailjs from "@emailjs/browser";
 
 const Contacts = () => {
   const t = useAppSelector((state) => state.language.translations);
+  const language = useAppSelector((state) => state.language.language);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -45,7 +46,10 @@ const Contacts = () => {
 
       setStatusMessage({
         type: "success",
-        text: "✓ Mesajınız başarıyla gönderildi!",
+        text:
+          language === "tr"
+            ? "✓ Mesajınız başarıyla gönderildi!"
+            : "✓ Your message has been sent successfully!",
       });
 
       setFormData({
@@ -58,7 +62,10 @@ const Contacts = () => {
       console.error("Email send error:", error);
       setStatusMessage({
         type: "error",
-        text: "✗ Mesaj gönderilemedi. Lütfen tekrar deneyin.",
+        text:
+          language === "tr"
+            ? "✗ Mesaj gönderilemedi. Lütfen tekrar deneyin."
+            : "✗ Message could not be sent. Please try again.",
       });
     } finally {
       setIsLoading(false);
@@ -96,14 +103,14 @@ const Contacts = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="flex flex-col items-center mb-8 text-justify"
+              className="flex flex-col items-center mb-8"
             >
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-gray-400 text-center max-w-2xl mb-2 text-justify"
+                className="text-gray-400 text-center max-w-2xl mb-2"
               >
                 {t.contact.subtitle}
               </motion.p>
@@ -113,7 +120,7 @@ const Contacts = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-gray-400 text-justify"
+                className="text-gray-400 text-center max-w-2xl"
                 dangerouslySetInnerHTML={{ __html: t.contact.description }}
               />
             </motion.div>
@@ -127,16 +134,16 @@ const Contacts = () => {
             transition={{ duration: 0.8 }}
             className="bg-gradient-to-br from-teal-950/40 to-cyan-950/40 backdrop-blur-sm border border-teal-700/50 rounded-xl overflow-hidden"
           >
-            <div className="border-b border-teal-700/50 px-6 py-4 flex items-center justify-between">
-              <div className="flex items-center gap-2">
+            <div className="border-b border-teal-700/50 px-6 py-4 flex items-center gap-4">
+              <div className="flex items-center gap-2 shrink-0">
                 <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                 <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                 <div className="w-3 h-3 bg-green-500 rounded-full"></div>
               </div>
-              <h4 className="text-gray-500 text-sm font-mono">
+              <h4 className="text-gray-500 text-xs sm:text-sm font-mono flex-1 text-center truncate min-w-0">
                 {t.contact.form.terminalTitle}
               </h4>
-              <div></div>
+              <div className="hidden sm:block w-[52px] shrink-0"></div>
             </div>
 
             <form onSubmit={handleSubmit} className="p-6 space-y-6">
@@ -149,6 +156,7 @@ const Contacts = () => {
                   <input
                     type="text"
                     name="name"
+                    required
                     value={formData.name}
                     onChange={handleChange}
                     placeholder={t.contact.form.namePlaceholder}
@@ -164,6 +172,7 @@ const Contacts = () => {
                   <input
                     type="email"
                     name="email"
+                    required
                     value={formData.email}
                     onChange={handleChange}
                     placeholder={t.contact.form.emailPlaceholder}
@@ -180,6 +189,7 @@ const Contacts = () => {
                 <input
                   type="text"
                   name="subject"
+                  required
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder={t.contact.form.subjectPlaceholder}
@@ -194,6 +204,7 @@ const Contacts = () => {
                 </label>
                 <textarea
                   name="message"
+                  required
                   value={formData.message}
                   onChange={handleChange}
                   placeholder={t.contact.form.messagePlaceholder}
@@ -247,7 +258,7 @@ const Contacts = () => {
                         d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                       ></path>
                     </svg>
-                    <span>Gönderiliyor...</span>
+                    <span>{language === "tr" ? "Gönderiliyor..." : "Sending..."}</span>
                   </>
                 ) : (
                   t.contact.form.submit
@@ -303,7 +314,7 @@ const Contacts = () => {
                 href="mailto:furkanakifislek@gmail.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 rounded-lg px-4 py-3 transition-colors col-span-2 max-w-[50%]"
+                className="flex items-center gap-2 bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 rounded-lg px-4 py-3 transition-colors"
               >
                 <Mail className="w-5 h-5 text-purple-400" />
                 <span className="text-white text-sm">

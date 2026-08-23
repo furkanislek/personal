@@ -139,7 +139,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="h-content flex mt-16 md:mt-12 xl:mt-16 2xl:mt-12 justify-center pt-6 md:pt-6 2xl:pt-8"
+      className="flex mt-16 md:mt-12 xl:mt-16 2xl:mt-12 justify-center pt-6 md:pt-6 2xl:pt-8"
     >
       <div className="w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
@@ -202,7 +202,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <p className="text-gray-400 text-sm md:text-base leading-relaxed mt-6 text-justify">
+              <p className="text-gray-400 text-sm md:text-base leading-relaxed mt-6 md:text-justify">
                 {t.home.description}
               </p>
 
@@ -214,6 +214,7 @@ const Home = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="flex-1 bg-cyan-500 hover:bg-cyan-600 text-black font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors"
+                  lang="en"
                 >
                   <ExternalLink className="w-4 h-4" />
                   {t.home.linkedinButton}
@@ -239,14 +240,16 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="bg-gray-900/30 backdrop-blur-sm border border-gray-800 rounded-lg p-6"
             >
-              <h4 className="text-cyan-400 text-sm font-bold mb-3 uppercase">
-                {t.home.sectionTitle}
-              </h4>
+              {t.home.sectionTitle && (
+                <h4 className="text-cyan-400 text-sm font-bold mb-3 uppercase">
+                  {t.home.sectionTitle}
+                </h4>
+              )}
               <p
-                className="text-gray-400 text-sm leading-relaxed text-justify"
+                className="text-gray-400 text-sm leading-relaxed md:text-justify"
                 dangerouslySetInnerHTML={{ __html: t.home.sectionDescription1 }}
               />
-              <p className="text-gray-400 text-sm leading-relaxed mt-4 text-justify">
+              <p className="text-gray-400 text-sm leading-relaxed mt-4 md:text-justify">
                 {t.home.sectionDescription2}
               </p>
             </motion.div>
@@ -305,7 +308,7 @@ const Home = () => {
                   <div className="bg-cyan-400/20 p-2 rounded-lg">
                     <BadgeCheck className="w-6 h-6 text-cyan-400" />
                   </div>
-                  <h4 className="text-cyan-400 text-xl font-bold uppercase">
+                  <h4 className="text-cyan-400 text-xl font-bold uppercase" lang="en">
                     {t.home.skills.title}
                   </h4>
                 </div>
@@ -371,7 +374,7 @@ const Home = () => {
 
                   return (
                     <div key={index} className="hover:cursor-default">
-                      <h5 className="text-gray-400 text-md font-semibold mb-2 uppercase">
+                      <h5 className="text-gray-400 text-sm md:text-base font-semibold mb-2 uppercase" lang="en">
                         {tool.category}
                       </h5>
                       <div className="flex flex-wrap gap-2 px-2 py-1 rounded-md leading-relaxed">
@@ -385,7 +388,7 @@ const Home = () => {
                             } backdrop-blur-sm border px-3 py-2 rounded-md leading-relaxed flex items-center gap-2 transition-colors duration-200`}
                           >
                             <span className="flex-shrink-0">{tool.icon}</span>
-                            <span className="text-white text-xs md:text-md">
+                            <span className="text-white text-xs md:text-sm">
                               {technology}
                             </span>
                           </div>

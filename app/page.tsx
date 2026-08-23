@@ -6,7 +6,7 @@ import Timeline from "@/components/Timeline";
 
 export default function Page() {
   return (
-    <div className="scroll-smooth px-8 xl:px-[15%] 2xl:px-[20%]">
+    <div className="px-4 md:px-8 xl:px-[15%] 2xl:px-[20%]">
       <Navbar />
       <main className="w-full">
         <Home />

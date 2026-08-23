@@ -25,16 +25,16 @@
         "TYPESCRIPT"
       ],
       "description": "Merhaba, ben Furkan. Finans sektöründe full stack developer olarak çalışıyorum. Eski kodları DDD ile yeniden tasarlayıp kodluyoruz, mikroservis mimarisine uygun çalışıyoruz. Kullandığım teknolojiler .netcore, nextjs, reactjs, mssql, kubernates, redux, elk, figma vb. Ayrıca Flutter ve React Native ile kendi mobil uygulamalarımı yazıyorum. Test aşamasında olan bazı uygulamalarım var. Çalışmaya azimli, takım çalışmasına uygun, hızlı düşünen ve hızlı başlayan bir karaktere sahibim.",
-      "linkedinButton": "LİNKEDİN",
+      "linkedinButton": "LINKEDIN",
       "cvButton": "CV İNDİR",
-      "sectionTitle": "",
+      "sectionTitle": "Bilgisayarım, Klavyem ve Ben",
       "sectionDescription1": "Ekiple çalışma konusunda deneyimim var. Agile yaklaşıma aşinayım. Ekibimde öncelikle çözüm odaklı, yeni yaratıcı fikirler ile katkıda bulunmaya çalışıyorum. Özellikle önyüz tarafında ekibe yardımcı olmaya çalışıyorum.",
       "sectionDescription2": "Yazılım geliştirme sürecinde sürekli öğrenmeye devam ediyorum. Bu süreçte çok değerli deneyimler kazandım ve hala devam ediyorum. Bulunduğum şirkette güncel teknolojileri kullanarak projeler geliştiriyorum.",
       "terminalFolder": "📂 furkan-portfolio",
       "terminalCommand": "npm run start:career",
       "terminalOutput1": "furkan-portfolio@01.11.98 start:career",
       "terminalOutput2": "node scripts/main.js",
-      "terminalSuccess": "✓ Profile looded successfully !",
+      "terminalSuccess": "✓ Profile loaded successfully!",
       "skills": {
         "title": "SOFT SKILLS",
         "items": [
@@ -96,7 +96,7 @@
           "id": 3,
           "title": "Freelancer",
           "company": "-",
-          "period": "Örn: 2020-2024",
+          "period": "2020 - 2024",
           "details": [
             "Upwork - Konteyner Kontrol Paneli, Gün İçi Raporlama Kontrol Paneli",
             "R10 - Web Sitesi Hız Optimizasyonu, Web Sitesi SEO Uygulaması"
@@ -292,7 +292,7 @@
           "id": 3,
           "title": "Freelancer",
           "company": "-",
-          "period": "Örn: 2020-2024",
+          "period": "2020 - 2024",
           "details": [
             "Upwork - Container Dashboard, Intraday Reporting Dashboard",
             "R10 - Web Site Speed Optimization, Web Site SEO Application"

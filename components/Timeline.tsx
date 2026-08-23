@@ -9,7 +9,7 @@ const Timeline = () => {
   return (
     <section
       id="timeline"
-      className="min-h-screen flex  justify-center py-6 md:py-6 2xl:py-8"
+      className="min-h-screen flex justify-center py-6 md:py-6 2xl:py-8"
     >
       <div className="w-full">
         <motion.h2
@@ -32,12 +32,12 @@ const Timeline = () => {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               className="bg-gradient-to-br from-teal-950/40 to-cyan-950/40 backdrop-blur-sm border border-teal-700/50 rounded-xl overflow-hidden hover:shadow-2xl hover:transition-shadow duration-300"
             >
-              <div className="border-b border-teal-700/50 px-6 py-4 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="bg-cyan-400/20 p-2 rounded-lg">
+              <div className="border-b border-teal-700/50 px-6 py-4 flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3 min-w-0">
+                  <div className="bg-cyan-400/20 p-2 rounded-lg shrink-0">
                     <Briefcase className="w-5 h-5 text-cyan-400" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h3 className="text-white text-lg md:text-xl font-bold">
                       {exp.title}
                     </h3>
@@ -46,8 +46,8 @@ const Timeline = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="hidden sm:flex items-center gap-2 text-gray-400 text-sm">
+                <div className="flex items-center gap-3 shrink-0">
+                  <div className="hidden sm:flex items-center gap-2 text-gray-400 text-sm whitespace-nowrap">
                     <Calendar className="w-4 h-4" />
                     <span>{exp.period}</span>
                   </div>
@@ -81,7 +81,7 @@ const Timeline = () => {
                       <div className="flex-shrink-0 mt-1">
                         <ChevronRight className="w-5 h-5 text-purple-400 group-hover:text-cyan-400 transition-colors duration-300" />
                       </div>
-                      <p className="text-gray-400 text-sm md:text-base leading-relaxed text-justify">
+                      <p className="text-gray-400 text-sm md:text-base leading-relaxed md:text-justify">
                         {detail}
                       </p>
                     </motion.div>

@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAppSelector } from "@/store/hooks";
-import translations from "@/locales/translations.json";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,9 +22,7 @@ const Projects = () => {
   );
   const t = useAppSelector((state) => state.language.translations);
 
-  const projects: Project[] =
-    (translations[language as keyof typeof translations] as any)?.projects
-      ?.posts || [];
+  const projects: Project[] = t.projects.posts;
 
   const handleImageError = (index: number) => {
     setImageErrors((prev) => ({ ...prev, [index]: true }));
@@ -53,7 +50,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="">
+    <section id="projects" className="py-6 md:py-6 2xl:py-8">
       <motion.h2
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -80,6 +77,7 @@ const Projects = () => {
             >
               <div className="absolute top-4 right-4 z-10">
                 <span
+                  lang="en"
                   className={`px-3 py-1 text-xs font-bold uppercase tracking-wider rounded ${
                     project.category === "Mobile"
                       ? "bg-secondary text-white"
@@ -129,7 +127,7 @@ const Projects = () => {
                 )}
               </div>
 
-              <div className="p-6 flex flex-col justify-evenly h-full">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300">
                   {project.title}
                 </h3>
@@ -149,7 +147,7 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-3">
+                <div className="flex gap-3 mt-auto">
                   <Link
                     href={project.link}
                     target="_blank"
@@ -177,6 +175,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center px-4 py-2 bg-transparent border border-gray-600 text-gray-400 hover:border-foreground hover:text-foreground transition-all duration-300 rounded"
+                    aria-label={`${project.title} – GitHub`}
                   >
                     <svg
                       className="w-5 h-5"

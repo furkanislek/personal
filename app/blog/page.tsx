@@ -109,11 +109,11 @@ const BlogList = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {blogPosts.map((post) => (
-            <motion.div key={post.id} variants={cardVariants}>
-              <Link href={`/blog/${post.slug}`}>
+            <motion.div key={post.id} variants={cardVariants} className="h-full">
+              <Link href={`/blog/${post.slug}`} className="block h-full">
                 <motion.article
                   whileHover={{ y: -5 }}
-                  className="relative bg-gray-900/80 border-2 border-cyan-500/40 rounded-lg overflow-hidden backdrop-blur-sm group cursor-pointer h-full"
+                  className="relative bg-gray-900/80 border-2 border-cyan-500/40 rounded-lg overflow-hidden backdrop-blur-sm group cursor-pointer h-full flex flex-col"
                 >
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/5 to-transparent pointer-events-none"
@@ -136,7 +136,7 @@ const BlogList = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60" />
                   </div>
 
-                  <div className="p-6 relative">
+                  <div className="p-6 relative flex flex-col flex-1">
                     <div className="flex items-center gap-4 mb-3 text-xs font-mono text-cyan-400/80">
                       <div className="flex items-center gap-1">
                         <Calendar size={14} />
@@ -168,7 +168,7 @@ const BlogList = () => {
                       ))}
                     </div>
 
-                    <div className="mt-4 flex items-center gap-2 text-cyan-400 font-mono text-sm">
+                    <div className="mt-auto pt-4 flex items-center gap-2 text-cyan-400 font-mono text-sm">
                       <span>
                         {language === "tr" ? "Devamını Oku" : "Read More"}
                       </span>

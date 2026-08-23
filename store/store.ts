@@ -1,12 +1,18 @@
 import { configureStore } from "@reduxjs/toolkit";
-import languageReducer from "./slices/languageSlice";
+import languageReducer, { getLanguageState } from "./slices/languageSlice";
 
-export const store = configureStore({
-  reducer: {
-    language: languageReducer,
-  },
-});
+export type Language = "tr" | "en";
 
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
+export const makeStore = (initialLanguage: Language = "tr") =>
+  configureStore({
+    reducer: {
+      language: languageReducer,
+    },
+    preloadedState: {
+      language: getLanguageState(initialLanguage),
+    },
+  });
 
+export type AppStore = ReturnType<typeof makeStore>;
+export type RootState = ReturnType<AppStore["getState"]>;
+export type AppDispatch = AppStore["dispatch"];

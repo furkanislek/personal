@@ -3,7 +3,7 @@ import { SquareTerminal, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { toggleLanguage } from "@/store/slices/languageSlice";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -15,6 +15,21 @@ const Navbar = () => {
   const handleToggleLanguage = () => {
     dispatch(toggleLanguage());
   };
+
+  // Mobil menü açıkken arka plan kaymasın; Esc ile kapansın.
+  useEffect(() => {
+    if (!isMenuOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsMenuOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [isMenuOpen]);
 
   const menuItems = [
     { name: t.navbar.home, href: "/" },
@@ -103,6 +118,7 @@ const Navbar = () => {
             whileHover={{ scale: 1, borderColor: "rgba(34, 211, 238, 0.6)" }}
             whileTap={{ scale: 1 }}
             className="relative bg-gray-900/80 border-2 border-cyan-500/40 rounded px-4 py-2 backdrop-blur-sm overflow-hidden group cursor-pointer text-sm"
+            aria-label={language === "tr" ? "Switch to English" : "Türkçeye geç"}
           >
             <motion.div
               className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/10 to-transparent"
@@ -149,6 +165,8 @@ const Navbar = () => {
 
         <motion.button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? "Menüyü kapat" : "Menüyü aç"}
+          aria-expanded={isMenuOpen}
           className="md:hidden relative bg-gray-900/80 border-2 border-cyan-500/40 rounded p-2 backdrop-blur-sm overflow-hidden group cursor-pointer"
           whileHover={{ scale: 1.05, borderColor: "rgba(34, 211, 238, 0.6)" }}
           whileTap={{ scale: 0.95 }}
@@ -275,6 +293,7 @@ const Navbar = () => {
                   }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full relative bg-gray-900/80 border-2 border-cyan-500/40 rounded px-4 py-3 backdrop-blur-sm overflow-hidden group cursor-pointer"
+                  aria-label={language === "tr" ? "Switch to English" : "Türkçeye geç"}
                 >
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/10 to-transparent"
