@@ -13,6 +13,10 @@ html {
   /* Sabit navbar'ın altında kalmasın diye çapa hedeflerine üstten boşluk */
   scroll-padding-top: 6rem;
   color-scheme: dark;
+  /* Giriş animasyonları (x: ±50) viewport dışına taşıyor; mobil tarayıcılarda
+     body'deki overflow-x-hidden yatay kaymayı engellemiyor. Kalıcı çözüm: html. */
+  overflow-x: hidden; /* eski tarayıcılar için fallback */
+  overflow-x: clip;
 }
 
 :root {
@@ -268,7 +272,10 @@ body {
 }
 
 .blog-content table {
-  @apply w-full border-2 border-cyan-500/40 rounded-lg overflow-hidden my-6;
+  @apply w-full border-2 border-cyan-500/40 rounded-lg my-6;
+  /* Dar ekranda geniş tablolar sayfayı değil kendi içini kaydırsın */
+  display: block;
+  overflow-x: auto;
 }
 
 .blog-content th {
