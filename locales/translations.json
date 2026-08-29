@@ -139,6 +139,15 @@
       "headerTitle": "PROJELER",
       "posts": [
         {
+          "title": "Recto - Shikaku Bulmaca Oyunu",
+          "description": "Recto, klasik Japon mantık bulmacası Shikaku'nun sakin ve şeker renkli bir yorumudur. Flutter ile geliştirildi; 1.100'den fazla el yapımı seviye, 5 zorluk kademesi, akıllı ipuçları, bulut kaydetme ve tamamen çevrimdışı oynanışıyla App Store ve Google Play'de yayında.",
+          "image": "/projects/recto.png",
+          "link": "https://recto-shikaku-sigma.vercel.app",
+          "github": "https://github.com/furkanislek/recto-shikaku",
+          "tags": ["Flutter", "Dart", "iOS", "Android", "Puzzle"],
+          "category": "Game"
+        },
+        {
           "title": "Amina Dose - İlaç Takip",
           "description": "AnimaDose, kusursuz ilaç takibi ve zamanında hatırlatıcılar için akıllı, kişisel sağlık arkadaşınızdır. Temiz bir tasarım ve dikkatli özelliklerle AnimaDose, günlük sağlık rutininizle uyum içinde kalmanıza yardımcı olur.",
           "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/unnamed.webp",
@@ -334,6 +343,15 @@
     "projects": {
       "headerTitle": "PROJECTS",
       "posts": [
+        {
+          "title": "Recto - Shikaku Patches Puzzle",
+          "description": "Recto is a calm, candy-bright take on Shikaku, the classic Japanese logic puzzle. Built with Flutter and live on the App Store and Google Play, it offers 1,100+ handcrafted levels, five difficulty tracks, smart hints, cloud save and fully offline play.",
+          "image": "/projects/recto.png",
+          "link": "https://recto-shikaku-sigma.vercel.app",
+          "github": "https://github.com/furkanislek/recto-shikaku",
+          "tags": ["Flutter", "Dart", "iOS", "Android", "Puzzle"],
+          "category": "Game"
+        },
         {
           "title": "Amina Dose - Med Reminder",
           "description": "AnimaDose is your smart, personal health companion for flawless medication tracking and timely reminders. With a clean design and thoughtful features, AnimaDose helps you stay in sync with your daily health routine.",
