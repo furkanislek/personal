@@ -142,9 +142,15 @@
           "title": "Recto - Shikaku Bulmaca Oyunu",
           "description": "Recto, klasik Japon mantık bulmacası Shikaku'nun sakin ve şeker renkli bir yorumudur. Flutter ile geliştirildi; 1.100'den fazla el yapımı seviye, 5 zorluk kademesi, akıllı ipuçları, bulut kaydetme ve tamamen çevrimdışı oynanışıyla App Store ve Google Play'de yayında.",
           "image": "/projects/recto.png",
-          "link": "https://recto-shikaku-sigma.vercel.app",
+          "link": "https://www.rectoplay.com/",
           "github": "https://github.com/furkanislek/recto-shikaku",
-          "tags": ["Flutter", "Dart", "iOS", "Android", "Puzzle"],
+          "tags": [
+            "Flutter",
+            "Dart",
+            "iOS",
+            "Android",
+            "Puzzle"
+          ],
           "category": "Game"
         },
         {
@@ -153,7 +159,13 @@
           "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/unnamed.webp",
           "link": "https://play.google.com/store/apps/details?id=com.aminadose.mr",
           "github": "https://github.com/furkanislek/med-reminder",
-          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "tags": [
+            "Flutter",
+            "Firebase",
+            "Supabase",
+            "Dart",
+            "UI/UX"
+          ],
           "category": "Mobile"
         },
         {
@@ -162,7 +174,12 @@
           "image": "https://r.resimlink.com/EiopavjA.png",
           "link": "https://dentalab-navy.vercel.app",
           "github": "https://github.com/furkanislek/dentalab",
-          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "tags": [
+            "Next.js",
+            "Tailwind CSS",
+            "Figma",
+            "UI/UX"
+          ],
           "category": "Web"
         },
         {
@@ -171,7 +188,13 @@
           "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/pocketpath.jpg",
           "link": "https://play.google.com/store/apps/details?id=com.pocket.pocketPath",
           "github": "https://github.com/furkanislek/PocketPath",
-          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "tags": [
+            "Flutter",
+            "Firebase",
+            "Supabase",
+            "Dart",
+            "UI/UX"
+          ],
           "category": "Mobile"
         },
         {
@@ -180,7 +203,12 @@
           "image": "https://r.resimlink.com/YMn-iw9Pp.png",
           "link": "https://mentalai-alpha.vercel.app",
           "github": "https://github.com/furkanislek/mentalai",
-          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "tags": [
+            "Next.js",
+            "Tailwind CSS",
+            "Figma",
+            "UI/UX"
+          ],
           "category": "Web"
         },
         {
@@ -189,7 +217,12 @@
           "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/admin-dashboard.png",
           "link": "https://admin-dashboard-furkan.vercel.app",
           "github": "https://github.com/furkanislek/admin-dashboard",
-          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "tags": [
+            "Next.js",
+            "Tailwind CSS",
+            "Figma",
+            "UI/UX"
+          ],
           "category": "Web"
         },
         {
@@ -198,7 +231,13 @@
           "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/tudora.png",
           "link": "https://github.com/furkanislek/students-control-app",
           "github": "https://github.com/furkanislek/students-control-app",
-          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "tags": [
+            "Flutter",
+            "Firebase",
+            "Supabase",
+            "Dart",
+            "UI/UX"
+          ],
           "category": "Mobile"
         }
       ]
@@ -347,9 +386,15 @@
           "title": "Recto - Shikaku Patches Puzzle",
           "description": "Recto is a calm, candy-bright take on Shikaku, the classic Japanese logic puzzle. Built with Flutter and live on the App Store and Google Play, it offers 1,100+ handcrafted levels, five difficulty tracks, smart hints, cloud save and fully offline play.",
           "image": "/projects/recto.png",
-          "link": "https://recto-shikaku-sigma.vercel.app",
+          "link": "https://www.rectoplay.com/",
           "github": "https://github.com/furkanislek/recto-shikaku",
-          "tags": ["Flutter", "Dart", "iOS", "Android", "Puzzle"],
+          "tags": [
+            "Flutter",
+            "Dart",
+            "iOS",
+            "Android",
+            "Puzzle"
+          ],
           "category": "Game"
         },
         {
@@ -358,7 +403,13 @@
           "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/unnamed.webp",
           "link": "https://play.google.com/store/apps/details?id=com.aminadose.mr",
           "github": "https://github.com/furkanislek/med-reminder",
-          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "tags": [
+            "Flutter",
+            "Firebase",
+            "Supabase",
+            "Dart",
+            "UI/UX"
+          ],
           "category": "Mobile"
         },
         {
@@ -367,7 +418,12 @@
           "image": "https://r.resimlink.com/EiopavjA.png",
           "link": "https://dentalab-navy.vercel.app",
           "github": "https://github.com/furkanislek/dentalab",
-          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "tags": [
+            "Next.js",
+            "Tailwind CSS",
+            "Figma",
+            "UI/UX"
+          ],
           "category": "Web"
         },
         {
@@ -376,7 +432,13 @@
           "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/pocketpath.jpg",
           "link": "https://play.google.com/store/apps/details?id=com.pocket.pocketPath",
           "github": "https://github.com/furkanislek/PocketPath",
-          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "tags": [
+            "Flutter",
+            "Firebase",
+            "Supabase",
+            "Dart",
+            "UI/UX"
+          ],
           "category": "Mobile"
         },
         {
@@ -385,7 +447,12 @@
           "image": "https://r.resimlink.com/YMn-iw9Pp.png",
           "link": "https://mentalai-alpha.vercel.app",
           "github": "https://github.com/furkanislek/mentalai",
-          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "tags": [
+            "Next.js",
+            "Tailwind CSS",
+            "Figma",
+            "UI/UX"
+          ],
           "category": "Web"
         },
         {
@@ -394,7 +461,12 @@
           "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/admin-dashboard.png",
           "link": "https://admin-dashboard-furkan.vercel.app",
           "github": "https://github.com/furkanislek/admin-dashboard",
-          "tags": ["Next.js", "Tailwind CSS", "Figma", "UI/UX"],
+          "tags": [
+            "Next.js",
+            "Tailwind CSS",
+            "Figma",
+            "UI/UX"
+          ],
           "category": "Web"
         },
         {
@@ -403,7 +475,13 @@
           "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/tudora.png",
           "link": "https://github.com/furkanislek/students-control-app",
           "github": "https://github.com/furkanislek/students-control-app",
-          "tags": ["Flutter", "Firebase", "Supabase", "Dart", "UI/UX"],
+          "tags": [
+            "Flutter",
+            "Firebase",
+            "Supabase",
+            "Dart",
+            "UI/UX"
+          ],
           "category": "Mobile"
         }
       ]
