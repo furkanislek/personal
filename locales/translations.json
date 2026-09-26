@@ -154,6 +154,21 @@
           "category": "Game"
         },
         {
+          "title": "Bunko EPub EReader",
+          "description": "Bunko e-kitap EPUB okuyucusu, kullanıcılara her ortamda benzersiz bir okuma deneyimi sunar. Ayrıca sesli kitapların, mangaların ve çizgi romanların keyfini çıkarmanıza ve EPUB, PDF, XLSX, DOCX ve CBZ gibi dosya türlerini okumanıza olanak tanır. Kaydetme, vurgulama, altını çizme, paylaşma ve metni sese dönüştürme özelliklerini içerir.",
+          "image": "/projects/bunko.png",
+          "link": "https://bunko-ereader.vercel.app/ads-download",
+          "github": "https://bunko-ereader.vercel.app/ads-download",
+          "tags": [
+            "Flutter",
+            "Dart",
+            "iOS",
+            "Android",
+            "Tools"
+          ],
+          "category": "Tools"
+        },
+        {
           "title": "Amina Dose - İlaç Takip",
           "description": "AnimaDose, kusursuz ilaç takibi ve zamanında hatırlatıcılar için akıllı, kişisel sağlık arkadaşınızdır. Temiz bir tasarım ve dikkatli özelliklerle AnimaDose, günlük sağlık rutininizle uyum içinde kalmanıza yardımcı olur.",
           "image": "https://qqhkuxtkfzejqnldouzo.supabase.co/storage/v1/object/public/photos/unnamed.webp",
@@ -396,6 +411,21 @@
             "Puzzle"
           ],
           "category": "Game"
+        },
+        {
+          "title": "Bunko EPub EReader",
+          "description": "The Bunko e-book EPUB reader offers users a unique reading experience in any setting. It also lets you enjoy audiobooks, manga, and comic books, and read file types such as EPUB, PDF, XLSX, DOCX, and CBZ. It includes features for saving, highlighting, underlining, sharing, and text-to-speech.",
+          "image": "/projects/bunko.png",
+          "link": "https://bunko-ereader.vercel.app/ads-download",
+          "github": "https://bunko-ereader.vercel.app/ads-download",
+          "tags": [
+            "Flutter",
+            "Dart",
+            "iOS",
+            "Android",
+            "Tools"
+          ],
+          "category": "Tools"
         },
         {
           "title": "Amina Dose - Med Reminder",
